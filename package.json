@@ -1,0 +1,24 @@
+{
+  "name": "ma-260-crave-brochureware",
+  "version": "1.0.0",
+  "description": "Digitalized version of CRAVE's menu",
+  "main": "index.js",
+  "scripts": {
+    "scss": "node-sass --watch scss -o css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nossi-web/ma-260-crave-brochureware.git"
+  },
+  "author": "Will Johnson, Alyssa Clark, Richard Walker",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nossi-web/ma-260-crave-brochureware/issues"
+  },
+  "homepage": "https://github.com/nossi-web/ma-260-crave-brochureware#readme",
+  "dependencies": {
+    "foundation-sites": "^6.6.1",
+    "live-server": "^1.2.1",
+    "node-sass": "^4.13.1"
+  }
+}
