@@ -3,9 +3,9 @@
  Digitalized version of CRAVE's menu
  
   ``` bash
-# install dependencies
+# Install dependencies
 $ npm install
 
-# watch scss
+# Watch SCSS
 $ npm run scss
 ```
