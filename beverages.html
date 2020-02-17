@@ -11,13 +11,12 @@
     <main class="grid-container">
         <h1>Beverages</h1>
         <p>Quench your thirst with refreshing drinks</p>
-        <div class="note">
-            <h3 class="note">&ast; Free refills with Nossi cup</h3>
-            <img src="" alt="">
+        <div class="note" data-toggle="menuBar">
+            <h3 class="note__text">&ast; Free refills with Nossi cup</h3>
+            <img src="images/icon_Help.svg" alt="Help icon" class="note__icon">
         </div>
 
-
-        <ul class="grid-x list">
+        <ul class="grid-x list" class="menu" id="menuBar" data-toggler=".expanded">
             <li class="cell list__item">
                 <div class="list__heading">
                     <h2 class="list__title">Coffee &ast;</h2>
