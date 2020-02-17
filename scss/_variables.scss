@@ -15,12 +15,12 @@ $header-font-weight: 600;
 $header-styles: (
   small: (
     'h1': ('font-size': 32, 'mb': 4),
-    'h2': ('font-size': 18, 'mb': 0),
+    'h2': ('font-size': 18, 'mb': 4),
     'h3': ('font-size': 16),
   ),
   medium: (
     'h1': ('font-size': 32, 'mb': 4),
-    'h2': ('font-size': 18, 'mb': 0),
+    'h2': ('font-size': 18, 'mb': 4),
     'h3': ('font-size': 16),
   ),
 );
