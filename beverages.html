@@ -16,15 +16,29 @@
             <img src="images/topBar_LogoBlack.png" alt="CRAVE logo" />
         </div>
     </div>
+    <div class="off-canvas position-bottom is-closed" id="offCanvas" data-off-canvas data-transition="overlay">
+    <div class="grid-container">
+        <div class="grid-x grid-margin-x sheet">
+            <div class="cell shrink">
+                <img src="images/sheet_NossiCup_312x312.png" alt="Nossi Cup" class="sheet__thumbnail">
+            </div>
+            <div class="cell auto">
+                <h2>Nossi Cup</h2>
+                <p>Buy a Nossi tumbler at the school’s front desk for $12, and get free daily refills at the cafe.</p>
+            </div>
+        </div>
+    </div>
+    </div>
+    
     <main class="grid-container">
         <h1>Beverages</h1>
         <p>Quench your thirst with refreshing drinks</p>
-        <div class="note" data-toggle="menuBar">
+        <div class="note" data-open="offCanvas">
             <h3 class="note__text">&ast; Free refills with Nossi cup</h3>
             <img src="images/icon_Help.svg" alt="Help icon" class="note__icon">
         </div>
 
-        <ul class="grid-x list" class="menu" id="menuBar" data-toggler=".expanded">
+        <ul class="grid-x list">
             <li class="cell list__item">
                 <div class="list__heading">
                     <h2 class="list__title">Coffee &ast;</h2>
@@ -59,6 +73,7 @@
 
         </ul>
     </main>
+</div>
     
     <script
         src="https://code.jquery.com/jquery-3.4.1.min.js"
@@ -66,9 +81,10 @@
         crossorigin="anonymous"
     ></script>
     <script
-        src="https://cdn.jsdelivr.net/npm/foundation-sites@6.4.3/dist/js/foundation.min.js"
-        integrity="sha256-mRYlCu5EG+ouD07WxLF8v4ZAZYCA6WrmdIXyn1Bv9Vk= sha384-KzKofw4qqetd3kvuQ5AdapWPqV1ZI+CnfyfEwZQgPk8poOLWaabfgJOfmW7uI+AV sha512-0gHfaMkY+Do568TgjJC2iMAV0dQlY4NqbeZ4pr9lVUTXQzKu8qceyd6wg/3Uql9qA2+3X5NHv3IMb05wb387rA=="
+        src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.6.1/js/foundation.min.js"
+        integrity="sha256-tdB5sxJ03S1jbwztV7NCvgqvMlVEvtcoJlgf62X49iM="
         crossorigin="anonymous"
     ></script>
+    <script src="js/app.js"></script>
 </body>
 </html>

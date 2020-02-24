@@ -1,6 +1,8 @@
 .note {
     display: flex;
     align-items: center;
+    min-height: 48px;
+    cursor: pointer;
 
     &__text {
         margin-bottom: 0;
