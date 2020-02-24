@@ -1,4 +1,4 @@
-$hero-back: url("../images/hero-back.png");
+$hero-back: url("../images/hero-back.jpg");
 $dark-grey: #262626;
 
 .white {
@@ -6,29 +6,23 @@ $dark-grey: #262626;
 }
 .hero-back {
     background-image: $hero-back;
-    background-size: 110%;
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    margin-bottom: 0.9rem;
 }
 .hero-gradient {
     background: linear-gradient(rgba(0, 0, 0, 0) 0%, $dark-grey 100%);
 }
 .hero-spacing {
     margin-top: 2rem;
-    margin-bottom: 9rem;
+    margin-bottom: 6rem;
 }
 .hero-p-spacing {
     margin-bottom: 2rem;
 }
-div .callout {
-    border-radius: 1rem;
-    padding: 0.5rem;
-}
 .sandwich-hero .grid-x {
     margin-top: 2rem;
-}
-.sandwich-hero p {
-    margin-top: -0.25rem;
 }
 .cell h4 {
     margin-top: 0.5rem;
