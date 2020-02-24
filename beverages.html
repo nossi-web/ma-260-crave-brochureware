@@ -8,14 +8,37 @@
     <title>Beverages - CRAVE Menu</title>
 </head>
 <body>
+    <div class="top-bar">
+        <div class="top-bar-left">
+            <a href="#"><img src="images/icon_LeftArrow.svg" alt="Left arrow icon"/></a>
+        </div>
+        <div class="top-bar-right">
+            <img src="images/topBar_LogoBlack.png" alt="CRAVE logo" />
+        </div>
+    </div>
+    
     <main class="grid-container">
         <h1>Beverages</h1>
         <p>Quench your thirst with refreshing drinks</p>
-        <div class="note">
-            <h3 class="note">&ast; Free refills with Nossi cup</h3>
-            <img src="" alt="">
-        </div>
 
+        <button class="note" data-open="offCanvas">
+            <h3 class="note__text">&ast; Free refills with Nossi cup</h3>
+            <img src="images/icon_Help.svg" alt="Help icon" class="note__icon">
+        </button>
+
+        <div class="off-canvas position-bottom is-closed" id="offCanvas" data-off-canvas data-transition="overlay">
+            <div class="grid-container">
+                <div class="grid-x grid-margin-x sheet">
+                    <div class="cell shrink">
+                        <img src="images/sheet_NossiCup_312x312.png" alt="Nossi Cup" class="sheet__thumbnail">
+                    </div>
+                    <div class="cell auto">
+                        <h2>Nossi Cup</h2>
+                        <p>Buy a Nossi tumbler at the school’s front desk for $12, and get free daily refills at the cafe.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <ul class="grid-x list">
             <li class="cell list__item">
@@ -24,18 +47,21 @@
                     <h3 class="list__price">&dollar;2</h3>
                 </div>
             </li>
+
             <li class="cell list__item">
                 <div class="list__heading">
                     <h2 class="list__title">Ice Coffee</h2>
                     <h3 class="list__price">&dollar;4</h3>
                 </div>
             </li>
+
             <li class="cell list__item">
                 <div class="list__heading">
                     <h2 class="list__title">Hot Tea</h2>
                     <h3 class="list__price">&dollar;2</h3>
                 </div>
             </li>
+
             <li class="cell list__item">
                 <div class="list__heading">
                     <h2 class="list__title">Ice Tea &ast;</h2>
@@ -43,13 +69,13 @@
                 </div>
                 <p class="list__description">Sweetened or unsweetened</p>
             </li>
+
             <li class="cell list__item">
                 <div class="list__heading">
                     <h2 class="list__title">Strawberry Lemonade &ast;</h2>
                     <h3 class="list__price">&dollar;2</h3>
                 </div>
             </li>
-
         </ul>
     </main>
     
@@ -59,9 +85,10 @@
         crossorigin="anonymous"
     ></script>
     <script
-        src="https://cdn.jsdelivr.net/npm/foundation-sites@6.4.3/dist/js/foundation.min.js"
-        integrity="sha256-mRYlCu5EG+ouD07WxLF8v4ZAZYCA6WrmdIXyn1Bv9Vk= sha384-KzKofw4qqetd3kvuQ5AdapWPqV1ZI+CnfyfEwZQgPk8poOLWaabfgJOfmW7uI+AV sha512-0gHfaMkY+Do568TgjJC2iMAV0dQlY4NqbeZ4pr9lVUTXQzKu8qceyd6wg/3Uql9qA2+3X5NHv3IMb05wb387rA=="
+        src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.6.1/js/foundation.min.js"
+        integrity="sha256-tdB5sxJ03S1jbwztV7NCvgqvMlVEvtcoJlgf62X49iM="
         crossorigin="anonymous"
     ></script>
+    <script src="js/app.js"></script>
 </body>
 </html>
