@@ -1,6 +1,19 @@
-
 $topbar-submenu-background: #FFF;
-
 $topbar-background: #FFF;
-
 $topbar-unstack-breakpoint: small;
+$topbar-padding: 0;
+$topbar-title-spacing: 0;
+
+.top-bar {
+    align-items: center;
+    position: sticky;
+    top: 0;
+
+    .top-bar-left, .top-bar-right {
+        flex: 0 0 4rem !important;
+        height: 4rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
