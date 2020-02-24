@@ -16,27 +16,29 @@
             <img src="images/topBar_LogoBlack.png" alt="CRAVE logo" />
         </div>
     </div>
-    <div class="off-canvas position-bottom is-closed" id="offCanvas" data-off-canvas data-transition="overlay">
-    <div class="grid-container">
-        <div class="grid-x grid-margin-x sheet">
-            <div class="cell shrink">
-                <img src="images/sheet_NossiCup_312x312.png" alt="Nossi Cup" class="sheet__thumbnail">
-            </div>
-            <div class="cell auto">
-                <h2>Nossi Cup</h2>
-                <p>Buy a Nossi tumbler at the school’s front desk for $12, and get free daily refills at the cafe.</p>
-            </div>
-        </div>
-    </div>
-    </div>
     
     <main class="grid-container">
         <h1>Beverages</h1>
         <p>Quench your thirst with refreshing drinks</p>
+
         <button class="note" data-open="offCanvas">
             <h3 class="note__text">&ast; Free refills with Nossi cup</h3>
             <img src="images/icon_Help.svg" alt="Help icon" class="note__icon">
         </button>
+
+        <div class="off-canvas position-bottom is-closed" id="offCanvas" data-off-canvas data-transition="overlay">
+            <div class="grid-container">
+                <div class="grid-x grid-margin-x sheet">
+                    <div class="cell shrink">
+                        <img src="images/sheet_NossiCup_312x312.png" alt="Nossi Cup" class="sheet__thumbnail">
+                    </div>
+                    <div class="cell auto">
+                        <h2>Nossi Cup</h2>
+                        <p>Buy a Nossi tumbler at the school’s front desk for $12, and get free daily refills at the cafe.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <ul class="grid-x list">
             <li class="cell list__item">
@@ -45,18 +47,21 @@
                     <h3 class="list__price">&dollar;2</h3>
                 </div>
             </li>
+
             <li class="cell list__item">
                 <div class="list__heading">
                     <h2 class="list__title">Ice Coffee</h2>
                     <h3 class="list__price">&dollar;4</h3>
                 </div>
             </li>
+
             <li class="cell list__item">
                 <div class="list__heading">
                     <h2 class="list__title">Hot Tea</h2>
                     <h3 class="list__price">&dollar;2</h3>
                 </div>
             </li>
+
             <li class="cell list__item">
                 <div class="list__heading">
                     <h2 class="list__title">Ice Tea &ast;</h2>
@@ -64,16 +69,15 @@
                 </div>
                 <p class="list__description">Sweetened or unsweetened</p>
             </li>
+
             <li class="cell list__item">
                 <div class="list__heading">
                     <h2 class="list__title">Strawberry Lemonade &ast;</h2>
                     <h3 class="list__price">&dollar;2</h3>
                 </div>
             </li>
-
         </ul>
     </main>
-</div>
     
     <script
         src="https://code.jquery.com/jquery-3.4.1.min.js"
