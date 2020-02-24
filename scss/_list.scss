@@ -1,0 +1,32 @@
+.list {
+    margin: 2rem 0 0;
+    list-style-type: none;
+
+    &__item {
+        margin-bottom: 1.5rem;
+        padding-bottom: 1.5rem;
+        border-bottom: 1px solid $light-gray;
+
+        &:last-child {
+            margin-bottom: 0;
+            padding-bottom: 0;
+            border-bottom: none;
+        }
+    }
+
+    &__heading {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+    }
+
+    &__title,
+    &__price {
+        margin: 0;
+    }
+
+    &__description {
+        margin-top: 0.25rem;
+        margin-bottom: 0;
+    }
+}
