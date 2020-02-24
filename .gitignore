@@ -1,7 +1,11 @@
 /node_modules
 /css
+<<<<<<< HEAD
 .package-lock.json
 .vscode
 .git
 .gitignore
 
+=======
+.package-lock.json
+>>>>>>> dev

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Grab & Go</title>
+
+    <style>
+        body{
+            color: #262626;
+            height: 64px;
+            width: 360px;
+        }
+        #topNav{
+            background-color: white;
+            border-bottom: 8px solid #E4E4E4;
+            display: grid;
+            grid-template-columns:repeat(3, 1fr);
+            height: 64px;
+            width: 360px;
+        }
+        #backArrow{
+            grid-column: 1;
+            grid-row: 1;
+            margin-left: 20px;
+            margin-top: 20px;
+        }
+        #menuLogo{
+            grid-column: 2;
+            grid-row: 1;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- Top Bar -->
+    <main class="grid-container">
+
+        <!-- Back Arrow -->
+        <a href=""> 
+            <img id="backArrow" src="images/icon_LeftArrow.svg" alt="back button" onclick="goBack()">
+        </a>
+        <!-- Back Arrow -->
+
+        <!-- Top Bar Logo -->
+        <a href=""> 
+        <img id="menuLogo" src="images/topBar_LogoBlack.png" alt="black logo img">
+        </a>
+        <!-- End of Top Bar Logo -->
+
+    </div>
+    <!-- End of Top Bar -->
+
+    <!-- Content -->
+    
+        <h1 class="full"> Grrab & Go </h1>
+        <p class="full"> Quick bite to eat for the go </p>
+
+        <ul class="grid-x list">
+            <li class="cell list__item">
+                <div class="list__heading">
+                    <h2 class="list__title"> Sausage Biscuit &ast;</h2>
+                    <h3 class="list__price">&dollar;2</h3>
+                </div>
+                <p class="list__description"> A single piece of sausage sandwiched between two halves of a warm biscuit </p>
+            </li>
+
+            <li class="cell list__item">
+                <div class="list__heading">
+                    <h2 class="list__title"> Fruit Cup &ast;</h2>
+                    <h3 class="list__price">&dollar;3</h3>
+                </div>
+                <p class="list__description"> A cup of a varity of fruits including strawberry, pineapple, honedew melon, grapes, and cantalope </p>
+            </li>
+
+            <li class="cell list__item">
+                <div class="list__heading">
+                    <h2 class="list__title"> Fruit & Yogurt Parfait &ast;</h2>
+                    <h3 class="list__price">&dollar;2</h3>
+                </div>
+                <p class="list__description"> Your choice of strawberries and/ or blueberries mixed in with granola and vanilla yogurt </p>
+            </li>
+
+            <li class="cell list__item">
+                <div class="list__heading">
+                    <h2 class="list__title"> Bagged Chips &ast;</h2>
+                    <h3 class="list__price">&dollar;2</h3>
+                </div>
+                <p class="list__description"> Your choice of Smokehouse BBQ, Sea salt, Sea Salt & Vinegar, Jalapeno flavored chips </p>
+            </li>
+
+            <li class="cell list__item">
+                <div class="list__heading">
+                    <h2 class="list__title"> Homemade Kettle Chips &ast;</h2>
+                    <h3 class="list__price">&dollar;3</h3>
+                </div>
+                <p class="list__description"> Freshly made kettle potato chips with parmesan and rosemary </p>
+            </li>
+
+            <li class="cell list__item">
+                <div class="list__heading">
+                    <h2 class="list__title"> Homemade Tortilla Chips &ast;</h2>
+                    <h3 class="list__price">&dollar;3</h3>
+                </div>
+                <p class="list__description"> Freshly made tricolor, flour tortilla chips </p>
+                <h3 class="list__title"> with queso </h3>
+                    <h3 class="list__price">&dollar;5</h3>
+            </li>
+        </ul>
+    </main>
+    <!-- End of Content -->
+
+<script>
+    function goBack() {
+      window.history.back();
+    }
+</script>
+    
+</body>
+</html>
