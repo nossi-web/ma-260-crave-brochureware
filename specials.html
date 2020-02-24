@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Top Nav</title>
+    <title>Specials</title>
 
     <style>
         body{
@@ -33,41 +33,13 @@
             margin-right: auto;
             margin-top: 20px;
         }
-        .container{
-            display: grid;
-            /* grid-gap: 2px; */
-            grid-template-columns:repeat(2, 1fr);
-            margin-left: 20px;
-            margin-right: 20px;
-        }
-        .partOne{
-            grid-column: 1;
-            /* grid-row: 1; */
-
-        }
-        .partTwo{
-            grid-column: 2;
-            /* grid-row: 1; */
-        }
-        .full{
-            grid-column: 1/3;
-            /* grid-row: 2;  */
-        }
-        .right{
-            text-align: right;
-        }
-        p{
-            color: #C4C4C4;
-        }
-        .darkGray{
-            color: #C4C4C4;
-        }
 
     </style>
 </head>
 <body>
-    <!-- Top Bar -->
-    <div id="topNav" class="top-bar">
+    <main class="grid-container">
+        <!-- Top Bar -->
+        <div id="topNav" class="top-bar">
 
         <!-- Back Arrow -->
         <a href=""> 
@@ -81,32 +53,53 @@
         </a>
         <!-- End of Top Bar Logo -->
 
-    </div>
+        </div>
     <!-- End of Top Bar -->
 
     <!-- Content -->
-    <div class="container">
-        <h1 class="partOne"> Specials </h1>   <h3 class="partTwo right"> $6 </h3>
-        <p class="full"> Variety of delicious speciality foods </p>
-        <h3 class="full"> Combo with chips $7 </h3>
+        <h1> Specials </h1>
+        <h1 class="list__price">&dollar;6</h1>
+        <p> Variety of delicious speciality foods </p>
+        <h3> Combo with chips $7 </h3>
+        
+        <ul class="grid-x grid-margin-x list">
+            <li class="cell list__item">
+                <div class="list__heading">
+                    <h2 class="list__title"> Pizza </h2>
+                </div>
+                <p class="list__description"> Cheese, pepperoni, BBQ, or buffalo chicken </p>
+            </li>
 
-        <h2 class="full"> Pizza </h2>
-        <p class="full"> Cheese, pepperoni, BBQ, or buffalo chicken </p>
+            <li class="cell list__item">
+                <div class="list__heading">
+                    <h2 class="list__title"> Chicken Tenders </h2>
+                </div>
+                <p class="list__description"> Served with ranch, honey mustard, ketchup, or BBQ sauce </p>
+                <h3 class="list__title"> 5 Pieces </h3>
+                    <h3 class="list__price">&dollar;6</h3>
+                <h3 class="list__title"> 3 Pieces </h3>
+                    <h3 class="list__price">&dollar;4</h3>    
+            </li>
 
-        <h2 class="full"> Chicken Tenders </h2>
-        <p class="full"> Served with ranch, honey mustard, ketchup, or BBQ sauce </p>
-        <h3 class="partOne"> 5 Pieces </h3>   <h3 class="partTwo right"> $6 </h3>
-        <h3 class="partOne"> 3 Pieces </h3>   <h3 class="partTwo right"> $4 </h3>
+            <li class="cell list__item">
+                <div class="list__heading">
+                    <h2 class="list__title"> Baked Potato </h2>
+                </div>
+                <p class="list__description"> Served with bacon, cheddar cheese, sour cream, butter, and scallions </p>
+            </li>
 
-        <h2 class="full"> Baked Potato </h2>
-        <p class="full"> Served with bacon, cheddar cheese, sour cream, butter, and scallions </p>
+            <li class="cell list__item">
+                <div class="list__heading">
+                    <h2 class="list__title"> Garden Salad </h2>
+                </div>
+                <p class="list__description"> Mixed greens, carrots, cucumbers, tomatoes, and cheddar cheese </p>
+                <h3 class="list__title"> with chicken </h3>
+                    <h3 class="list__price">&dollar;10</h3> 
+            </li>
+    </ul>
 
-        <h2 class="full"> Garden Salad </h2>
-        <p class="full"> Mixed greens, carrots, cucumbers, tomatoes, and cheddar cheese </p>
-        <h3 class="partOne"> with chicken </h3>   <h3 class="partTwo right"> $10 </h3>
-
-    </div>
     <!-- End of Content -->
+    </main>
 
 <script>
     function goBack() {
