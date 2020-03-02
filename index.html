@@ -168,6 +168,57 @@
             </ul>
         </main>
     </div>
+    <div class="off-canvas position-right is-closed" id="specials" data-off-canvas data-transition="overlap">
+        <div class="top-bar grid-x small-text-center shadow">
+            <div class="cell small-offset-1 small-3 top-bar-left" data-close>
+                <span class="aria-hidden"><img src="images/icon_LeftArrow.svg"></span>
+            </div>
+            <img src="images/topBar_LogoBlack.png" class="cell small-4 top-bar-title">
+            <div class="cell small-4 top-bar-right"></div>
+        </div>
+        <main class="grid-container">
+            <h1> Specials </h1>
+            <span class="badge">&dollar;6</span>
+            <p> Variety of delicious speciality foods </p>
+            <h3> Combo with chips $7 </h3>
+        
+            <ul class="grid-x grid-margin-x list">
+                <li class="cell list__item">
+                    <div class="list__heading">
+                        <h2 class="list__title"> Pizza </h2>
+                    </div>
+                    <p class="list__description"> Cheese, pepperoni, BBQ, or buffalo chicken </p>
+                </li>
+
+                <li class="cell list__item">
+                    <div class="list__heading">
+                        <h2 class="list__title"> Chicken Tenders </h2>
+                    </div>
+                    <p class="list__description"> Served with ranch, honey mustard, ketchup, or BBQ sauce </p>
+                    <h3 class="list__title"> 5 Pieces </h3>
+                        <span class="list__price">&dollar;6</span>
+                    <h3 class="list__title"> 3 Pieces </h3>
+                        <span class="list__price">&dollar;4</span>    
+                </li>
+
+                <li class="cell list__item">
+                    <div class="list__heading">
+                        <h2 class="list__title"> Baked Potato </h2>
+                    </div>
+                    <p class="list__description"> Served with bacon, cheddar cheese, sour cream, butter, and scallions </p>
+                </li>
+
+                <li class="cell list__item">
+                    <div class="list__heading">
+                        <h2 class="list__title"> Garden Salad </h2>
+                    </div>
+                    <p class="list__description"> Mixed greens, carrots, cucumbers, tomatoes, and cheddar cheese </p>
+                    <h3 class="list__title"> with chicken </h3>
+                        <span class="list__price">&dollar;10</span> 
+                </li>
+            </ul>
+        </main>
+    </div>
     <div class="off-canvas-content" data-off-canvas-content>
         <div class="grid-container full">
             <div class="grid-x">
@@ -183,7 +234,7 @@
                     <img src="images/sandwich.png" alt="sandwiches">
                     <h3 class="cell small-10">Sandwiches</h3>
                 </div>
-                <div class="card borderless cell small-10 small-offset-1">
+                <div class="card borderless cell small-10 small-offset-1" data-toggle="specials">
                     <img src="images/specials.png" alt="pizzas">
                     <h3 class="cell small-10">Specials</h3>
                 </div>
@@ -203,6 +254,7 @@
         </div>
     </div>
 </div>
+
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.4.3/dist/js/foundation.min.js"

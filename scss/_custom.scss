@@ -2,3 +2,10 @@ main {
     padding-top: 1.5rem;
     padding-bottom: 3rem;
 }
+// Raises the badges on the same line as the headers
+h1{
+    display: inline-block;
+}
+h3{
+    display: inline-block;
+}
