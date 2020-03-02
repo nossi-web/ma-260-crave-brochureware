@@ -53,24 +53,46 @@
 
     <div class="off-canvas position-right" id="specials" data-off-canvas>
         <!-- Your menu or Off-canvas content goes here -->
+
+        <div class="grid-container">
+            <div class="grid-x grid-margin-x">
+                <div class="cell small-4">
+
+                    <a href="">
+                        <img id="backArrow" src="images/icon_LeftArrow.svg" alt="back button" data-close>
+                    </a>
+                </div>
+                <div class="cell small-4">
+
+                    <a href="">
+                        <img id="menuLogo" src="images/topBar_LogoBlack.png" alt="black logo img">
+                    </a>
+                </div>
+                <div class="cell small-4"></div>
+            </div>
+        </div>
+
         <!-- Top Bar -->
         <div id="topNav" class="top-bar">
 
             <!-- Back Arrow -->
-            <a href="">
-                <img class="close-button" id="backArrow" src="images/icon_LeftArrow.svg" alt="back button" data-close>
-            </a>
-            <!-- Back Arrow -->
+            <div class="top-bar-left">
+                <a href="">
+                    <img id="backArrow" src="images/icon_LeftArrow.svg" alt="back button" data-close>
+                </a>
+            </div>
 
-            <!-- Top Bar Logo -->
-            <a href="">
-                <img id="menuLogo" src="images/topBar_LogoBlack.png" alt="black logo img">
-            </a>
-            <!-- End of Top Bar Logo -->
+
+            <div class="top-bar-right">
+                <!-- Top Bar Logo -->
+                <a href="">
+                    <img id="menuLogo" src="images/topBar_LogoBlack.png" alt="black logo img">
+                </a>
+                <!-- End of Top Bar Logo -->
+            </div>
 
         </div>
-        <!-- End of Top Bar -->
-
+        <!-- /.top-bar -->
 
         <!-- Content -->
         <h1> Specials </h1>
