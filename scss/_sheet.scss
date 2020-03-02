@@ -10,8 +10,14 @@ $offcanvas-transition-length: 0.3s;
 $offcanvas-transition-timing: cubic-bezier(0, 0, 0.2, 1);
 $offcanvas-exit-background: rgba(0, 0, 0, 0.25);
 
+.off-canvas.position-right {
+    width: 100vw;
+    height: 100vh;
+}
+
 .off-canvas.position-bottom {
     border-radius: 0.5rem 0.5rem 0 0;
+    height: 192px;
 }
 
 .sheet {
