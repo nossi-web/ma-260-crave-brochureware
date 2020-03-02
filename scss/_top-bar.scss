@@ -6,14 +6,22 @@ $topbar-title-spacing: 0;
 
 .top-bar {
     align-items: center;
+    background-color: white;
+    box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.2);
+    height: 64px;
     position: sticky;
     top: 0;
+    width: 100vw;
 
-    .top-bar-left, .top-bar-right {
+    &-left, &-right {
         flex: 0 0 4rem !important;
         height: 4rem;
         display: flex;
         justify-content: center;
         align-items: center;
+    }
+
+    &-title {
+        height: 28px;
     }
 }
