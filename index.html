@@ -51,6 +51,123 @@
             </div>
         </div>
     </div>
+    <div class="off-canvas position-right is-closed" id="sweets" data-off-canvas data-transition="overlap">
+        <div class="top-bar grid-x small-text-center shadow">
+            <div class="cell small-offset-1 small-3 top-bar-left" data-close>
+                <span class="aria-hidden"><img src="images/icon_LeftArrow.svg"></span>
+            </div>
+            <img src="images/topBar_LogoBlack.png" class="cell small-4 top-bar-title">
+            <div class="cell small-4 top-bar-right"></div>
+        </div>
+        <main class="grid-container">
+            <h1>Sweets</h1>
+            <p>Satisfy your sweet tooth</p>
+    
+            <ul class="grid-x grid-margin-x list">
+                <li class="cell list__item">
+                    <div class="list__heading">
+                        <h2 class="list__title">Cheesecake</h2 class="list__title">
+                        <h3 class="list__price">&dollar;1</h3>
+                    </div>
+                    <p class="list__description">Tennessee Cheesecake with a creamy filling and a graham cracker crust</p>
+                </li>
+    
+                <li class="cell list__item">
+                    <div class="list__heading">
+                        <h2 class="list__title">Cookie</h2>
+                        <h3 class="list__price">&dollar;2</h3>
+                    </div>
+                    <p class="list__description">Options of chocolate chunk, peanut butter and chocolate chunk, sugar, white chocolate, macadamia, lemon, or oatmeal raisin</p class="list__description">
+                </li>
+    
+                <li class="cell list__item">
+                    <div class="list__heading">
+                        <h2 class="list__title">Brownie</h2>
+                        <h3 class="list__price">&dollar;3</h3>
+                    </div>
+                    <p class="list__description">Option of a Decative brownie with icing and chocolate chips, or a Turtle brownie with pecans and caramel</p>
+                </li>
+    
+                <li class="cell list__item">
+                    <div class="list__heading">
+                        <h2 class="list__title">Chef’s Pick</h2>
+                        <h3 class="list__price">&dollar;4</h3>
+                    </div>
+                    <p class="list__description">Ask the server if you want to know more about this delictable daily sweet</p>
+                </li>
+            </ul>
+        </main>
+    </div>
+    <div class="off-canvas position-right is-closed" id="beverages" data-off-canvas data-transition="overlap">
+        <div class="top-bar grid-x small-text-center shadow">
+            <div class="cell small-offset-1 small-3 top-bar-left" data-close>
+                <span class="aria-hidden"><img src="images/icon_LeftArrow.svg"></span>
+            </div>
+            <img src="images/topBar_LogoBlack.png" class="cell small-4 top-bar-title">
+            <div class="cell small-4 top-bar-right"></div>
+        </div>
+        <main class="grid-container">
+            <h1>Beverages</h1>
+            <p>Quench your thirst with refreshing drinks</p>
+    
+            <button class="note" data-open="offCanvas">
+                <h3 class="note__text">&ast; Free refills with Nossi cup</h3>
+                <img src="images/icon_Help.svg" alt="Help icon" class="note__icon">
+            </button>
+    
+            <div class="off-canvas position-bottom is-closed" id="offCanvas" data-off-canvas data-transition="overlay">
+                <div class="grid-container">
+                    <div class="grid-x grid-margin-x sheet">
+                        <div class="cell shrink">
+                            <img src="images/sheet_NossiCup_312x312.png" alt="Nossi Cup" class="sheet__thumbnail">
+                        </div>
+                        <div class="cell auto">
+                            <h2>Nossi Cup</h2>
+                            <p>Buy a Nossi tumbler at the school’s front desk for $12, and get free daily refills at the cafe.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <ul class="grid-x list">
+                <li class="cell list__item">
+                    <div class="list__heading">
+                        <h2 class="list__title">Coffee &ast;</h2>
+                        <h3 class="list__price">&dollar;2</h3>
+                    </div>
+                </li>
+    
+                <li class="cell list__item">
+                    <div class="list__heading">
+                        <h2 class="list__title">Ice Coffee</h2>
+                        <h3 class="list__price">&dollar;4</h3>
+                    </div>
+                </li>
+    
+                <li class="cell list__item">
+                    <div class="list__heading">
+                        <h2 class="list__title">Hot Tea</h2>
+                        <h3 class="list__price">&dollar;2</h3>
+                    </div>
+                </li>
+    
+                <li class="cell list__item">
+                    <div class="list__heading">
+                        <h2 class="list__title">Ice Tea &ast;</h2>
+                        <h3 class="list__price">&dollar;2</h3>
+                    </div>
+                    <p class="list__description">Sweetened or unsweetened</p>
+                </li>
+    
+                <li class="cell list__item">
+                    <div class="list__heading">
+                        <h2 class="list__title">Strawberry Lemonade &ast;</h2>
+                        <h3 class="list__price">&dollar;2</h3>
+                    </div>
+                </li>
+            </ul>
+        </main>
+    </div>
     <div class="off-canvas-content" data-off-canvas-content>
         <div class="grid-container full">
             <div class="grid-x">
@@ -62,27 +179,26 @@
                             items offered on campus at Nossi.</p>
                     </div>
                 </div>
-
                 <div class="card borderless cell small-10 small-offset-1" data-toggle="menuOne">
                     <img src="images/sandwich.png" alt="sandwiches">
                     <h3 class="cell small-10">Sandwiches</h3>
                 </div>
-                <a class="card borderless cell small-10 small-offset-1">
+                <div class="card borderless cell small-10 small-offset-1">
                     <img src="images/specials.png" alt="pizzas">
                     <h3 class="cell small-10">Specials</h3>
-                </a>
+                </div>
                 <a class="card borderless cell small-10 small-offset-1">
                     <img src="images/chips.png" alt="chips">
                     <h3 class="cell small-10">Grab & Go</h3>
                 </a>
-                <a class="card borderless cell small-10 small-offset-1">
+                <div class="card borderless cell small-10 small-offset-1" data-toggle="sweets">
                     <img src="images/brownies.png" alt="brownies">
                     <h3 class="cell small-10">Sweets</h3>
-                </a>
-                <a class="card borderless cell small-10 small-offset-1">
+                </div>
+                <div class="card borderless cell small-10 small-offset-1" data-toggle="beverages">
                     <img src="images/lemonade.png" alt="pink-lemonade">
                     <h3 class="cell small-10">Beverages</h3>
-                </a>
+                </div>
             </div>
         </div>
     </div>
