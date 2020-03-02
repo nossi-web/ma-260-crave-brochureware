@@ -7,32 +7,21 @@ $topbar-title-spacing: 0;
 .top-bar {
     align-items: center;
     background-color: white;
-    border-bottom: 6px solid #E4E4E4;
-    display: grid;
-    grid-template-columns:repeat(3, 1fr);
+    box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.2);
     height: 64px;
     position: sticky;
-    width: 360px;
+    top: 0;
+    width: 100vw;
 
-    .top-bar-left, .top-bar-right {
+    &-left, &-right {
         flex: 0 0 4rem !important;
         height: 4rem;
         display: flex;
         justify-content: center;
         align-items: center;
     }
-}
 
-#backArrow{
-    grid-column: 1;
-    grid-row: 1;
-    margin-left: 20px;
-    margin-top: 20px;
-}
-#menuLogo{
-    grid-column: 2;
-    grid-row: 1;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 20px;
+    &-title {
+        height: 28px;
+    }
 }
