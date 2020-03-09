@@ -12,13 +12,15 @@ $dark-grey: #262626;
 }
 .hero-gradient {
     background: linear-gradient(rgba(0, 0, 0, 0) 0%, $dark-grey 100%);
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
 }
 .hero-spacing {
     margin-top: 2rem;
     margin-bottom: 6rem;
 }
 .hero-p-spacing {
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
 }
 .sandwich-hero .grid-x {
     margin-top: 2rem;
