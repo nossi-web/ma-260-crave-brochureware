@@ -2,21 +2,27 @@ $zero-size: 0;
 $borderless: none;
 
 .card.borderless {
-    border: none;
+	border: none;
 }
+
 .card {
-    height: 15rem;
-    overflow: hidden;
+	margin-top: 1rem;
+
+	img {
+        width: 100%;
+		border-radius: 0.5rem;
+    }
+
+	h3 {
+		margin-top: 1rem;
+		font-size: 1.125rem;
+	}
 }
-.card h3 {
-    margin-top: 1rem;
-}
-.card img {
-    height: 100%;
-}
+
 .top {
-    margin-top: 1.5rem;
+	margin-top: 1.5rem;
 }
+
 .bottom {
-    padding-bottom: 3rem;
+	padding-bottom: 3rem;
 }
