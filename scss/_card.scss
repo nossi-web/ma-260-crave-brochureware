@@ -4,18 +4,15 @@ $borderless: none;
 .card.borderless {
     border: none;
 }
-.card div {
+.card {
     height: 15rem;
     overflow: hidden;
-}
-.card div img {
-    margin-top: -2rem;
 }
 .card h3 {
     margin-top: 1rem;
 }
-.card {
-    margin-top: 1rem;
+.card img {
+    height: 100%;
 }
 .top {
     margin-top: 1.5rem;
