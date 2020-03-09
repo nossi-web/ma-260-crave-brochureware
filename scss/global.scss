@@ -1,11 +1,14 @@
-@import '../node_modules/foundation-sites/scss/settings/settings';
-@import '../node_modules/foundation-sites/scss/foundation';
-@include foundation-everything;
-
+@import 'font';
 @import 'variables';
 @import 'badge';
 @import 'card';
 @import 'hero';
 @import 'list';
+@import 'note';
 @import 'sheet';
 @import 'top-bar';
+@import 'custom';
+
+@import '../node_modules/foundation-sites/scss/foundation';
+@include foundation-everything($prototype: true);
+/* */
